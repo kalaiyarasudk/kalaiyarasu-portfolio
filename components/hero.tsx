@@ -30,8 +30,7 @@ export function Hero() {
               Hi, I'm <span className="brand-monogram">Kalaiyarasu D</span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              SOX Analyst → Data Engineer | Turning raw data into reliable insights with PySpark, SQL, Databricks, and
-              cloud
+              Databricks Certified Data Engineer | SOX Compliance Automation
             </p>
           </div>
 

@@ -12,18 +12,22 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-foreground">Kalaiyarasu D</h3>
+            {/* --- UPDATED BRAND NARRATIVE --- */}
             <p className="text-muted-foreground">
-              SOX Analyst → Data Engineer | Turning raw data into reliable insights with cloud technologies.
+              Databricks Certified Data Engineer | SOX Compliance Automation
             </p>
+            {/* --- END OF UPDATE --- */}
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                {/* --- UPDATED GITHUB LINK --- */}
+                <a href="https://github.com/kalaiyarasudk" target="_blank" rel="noopener noreferrer">
                   <Github className="w-5 h-5" />
                   <span className="sr-only">GitHub</span>
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                {/* --- UPDATED LINKEDIN LINK --- */}
+                <a href="https://www.linkedin.com/in/kalaiyarasu-d/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5" />
                   <span className="sr-only">LinkedIn</span>
                 </a>
@@ -56,16 +60,18 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Services */}
+          {/* --- UPDATED EXPERTISE SECTION --- */}
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Expertise</h4>
             <nav className="flex flex-col space-y-2">
-              <span className="text-muted-foreground">Data Pipeline Development</span>
-              <span className="text-muted-foreground">ETL/ELT Processing</span>
-              <span className="text-muted-foreground">Cloud Data Architecture</span>
-              <span className="text-muted-foreground">Data Quality & Governance</span>
+              {/* These now match your resume keywords */}
+              <span className="text-muted-foreground">Data Pipeline Development (PySpark)</span>
+              <span className="text-muted-foreground">Databricks & Delta Lake</span>
+              <span className="text-muted-foreground">Azure Cloud Architecture (ADF, ADLS)</span>
+              <span className="text-muted-foreground">Data Integrity & SOX Automation</span>
             </nav>
           </div>
+          {/* --- END OF UPDATE --- */}
         </div>
 
         <Separator className="my-8" />

@@ -59,11 +59,17 @@ export function Contact() {
               ))}
             </div>
 
-            <div className="pt-8 text-center">
-              <h4 className="font-semibold text-foreground mb-4">Preferred Contact Methods</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• Email for project inquiries and detailed discussions</li>
-                <li>• LinkedIn for professional networking</li>
+            <div className="pt-8">
+              <h4 className="font-semibold text-foreground mb-4 text-center">Preferred Contact Methods</h4>
+              <ul className="space-y-2 text-muted-foreground max-w-md mx-auto">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-0.5 flex-shrink-0">•</span>
+                  <span>Email for project inquiries and detailed discussions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-0.5 flex-shrink-0">•</span>
+                  <span>LinkedIn for professional networking</span>
+                </li>
               </ul>
             </div>
           </div>

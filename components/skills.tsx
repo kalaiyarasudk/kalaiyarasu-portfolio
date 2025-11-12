@@ -8,70 +8,63 @@ import {
   Zap,
   GitBranch,
   BarChart3,
-  FileSpreadsheet,
   CheckCircle2,
 } from "lucide-react"
 
 export function Skills() {
+  // --- UPDATED SKILL CATEGORIES TO MATCH RESUME ---
   const skillCategories = [
     {
-      title: "Programming Languages",
-      icon: Code2,
+      title: "Data Engineering",
+      icon: Database,
       skills: [
-        { name: "Python (Pandas, PySpark)", level: 90 },
-        { name: "SQL (Oracle, PostgreSQL, Redshift)", level: 95 },
-        { name: "Apache Spark", level: 85 },
-        { name: "PySpark", level: 88 },
+        { name: "Databricks & PySpark", level: 90 },
+        { name: "SQL (Advanced)", level: 95 },
+        { name: "Python (Pandas)", level: 85 },
+        { name: "ETL/ELT Pipelines", level: 88 },
       ],
     },
     {
-      title: "Big Data & Cloud",
+      title: "Tools & Platforms",
       icon: Cloud,
       skills: [
-        { name: "AWS (S3, Lambda, Glue)", level: 85 },
-        { name: "Databricks", level: 82 },
-        { name: "Delta Lake", level: 78 },
-        { name: "Step Functions", level: 80 },
+        // UPDATED: This is our core cloud stack
+        { name: "Azure (ADF, ADLS Gen2)", level: 85 },
+        { name: "Delta Lake", level: 80 },
+        { name: "Git & GitHub", level: 90 },
       ],
     },
     {
-      title: "Data Quality & Governance",
+      title: "Compliance & Domain",
       icon: Shield,
       skills: [
-        { name: "Data Validation", level: 92 },
-        { name: "SOX Controls", level: 95 },
-        { name: "Data Reconciliation", level: 90 },
-        { name: "Auditability", level: 88 },
+        // UPDATED: These are your "secret weapon" skills
+        { name: "SOX Compliance", level: 95 },
+        { name: "Data Integrity & Validation", level: 92 },
+        { name: "IT General Controls (ITGC)", level: 90 },
+        { name: "Role-Based Access Control (RBAC)", level: 88 },
       ],
     },
   ]
+  // --- END OF UPDATES ---
 
+  // --- UPDATED & FOCUSED TECHNOLOGIES LIST ---
+  // All AWS and generic/filler tech has been REMOVED.
   const technologies = [
-    { name: "Python", icon: Code2, desc: "Data processing & automation" },
-    { name: "PySpark", icon: Zap, desc: "Big data processing" },
-    { name: "Apache Spark", icon: Server, desc: "Distributed computing" },
-    { name: "SQL", icon: Database, desc: "Data querying & analysis" },
-    { name: "AWS S3", icon: Cloud, desc: "Object storage" },
-    { name: "AWS Lambda", icon: Zap, desc: "Serverless functions" },
-    { name: "AWS Glue", icon: Server, desc: "ETL service" },
-    { name: "Step Functions", icon: GitBranch, desc: "Workflow orchestration" },
-    { name: "Redshift", icon: Database, desc: "Data warehouse" },
     { name: "Databricks", icon: BarChart3, desc: "Analytics platform" },
-    { name: "Delta Lake", icon: Database, desc: "Data lake storage" },
-    { name: "SNS", icon: Zap, desc: "Messaging service" },
-    { name: "CloudWatch", icon: BarChart3, desc: "Monitoring & logging" },
-    { name: "Oracle Apps R12", icon: Database, desc: "Enterprise software" },
-    { name: "PostgreSQL", icon: Database, desc: "Relational database" },
+    { name: "PySpark", icon: Zap, desc: "Big data processing" },
+    { name: "Python", icon: Code2, desc: "Data processing & automation" },
+    { name: "SQL", icon: Database, desc: "Data querying & analysis" },
+    { name: "Azure Data Factory", icon: Server, desc: "ETL/ELT Orchestration" },
+    { name: "Azure Data Lake", icon: Cloud, desc: "Cloud data storage" },
+    { name: "Delta Lake", icon: Database, desc: "Data lake storage (ACID)" },
     { name: "Git", icon: GitBranch, desc: "Version control" },
     { name: "GitHub", icon: GitBranch, desc: "Code collaboration" },
-    { name: "Pandas", icon: Code2, desc: "Data manipulation" },
-    { name: "Data Validation", icon: CheckCircle2, desc: "Quality assurance" },
     { name: "SOX Controls", icon: Shield, desc: "Compliance framework" },
-    { name: "Excel", icon: FileSpreadsheet, desc: "Data analysis" },
-    { name: "Parquet", icon: Database, desc: "Columnar storage" },
+    { name: "Data Validation", icon: CheckCircle2, desc: "Quality assurance" },
     { name: "ETL Pipelines", icon: Server, desc: "Data transformation" },
-    { name: "Data Quality", icon: CheckCircle2, desc: "Data integrity" },
   ]
+  // --- END OF UPDATES ---
 
   return (
     <section id="skills" className="py-20 bg-muted/30">
@@ -79,7 +72,7 @@ export function Skills() {
         <div className="text-center mb-16">
           <h2 className="section-header mb-4">Skills & Technologies</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here's an overview of my data engineering skills and the technologies I work with regularly.
+            A focused stack for building robust, secure, and compliant data solutions.
           </p>
         </div>
 
@@ -118,7 +111,8 @@ export function Skills() {
 
         {/* Technologies Badge Cloud */}
         <div className="text-center space-y-8">
-          <h3 className="text-2xl font-bold text-foreground">Technologies I Work With</h3>
+          <h3 className="text-2xl font-bold text-foreground">My Core Tech Stack</h3>
+          {/* UPDATED: Changed grid columns for a tighter, more focused list */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {technologies.map((tech, index) => {
               const IconComponent = tech.icon
@@ -144,6 +138,7 @@ export function Skills() {
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-foreground mb-4">Always Learning</h3>
               <p className="text-muted-foreground leading-relaxed">
+                {/* This section is fine as-is. It shows good forward-looking ambition. */}
                 I'm constantly exploring new technologies and improving my data engineering skills. Currently, I'm
                 diving deeper into advanced PySpark optimizations, real-time streaming with Kafka, and MLOps practices.
                 I believe in continuous learning and staying up-to-date with the latest big data and cloud technologies.
